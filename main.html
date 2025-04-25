@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechLearn - Learn New Technologies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primary-color: #2F2F2F;
+            --accent-color: #0079FF;
+            --light-bg: #F6F6F6;
+            --text-dark: #2D2D2D;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .navbar {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links a {
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .hero {
+            padding: 5rem 5%;
+            text-align: center;
+            background: linear-gradient(45deg, #f3f7fe, #e6f0ff);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .tech-categories {
+            padding: 4rem 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .category-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .courses-section {
+            padding: 4rem 5%;
+            background-color: var(--light-bg);
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .course-info {
+            padding: 1.5rem;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 5%;
+            margin-top: 5rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+	<nav class="navbar">
+    <div class="logo">TechLearn</div>
+    <div class="nav-links">
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="courses.html" target="_blank"><i class="fas fa-book-open"></i> Courses</a>
+        <a href="about.html" target="_blank"><i class="fas fa-info-circle"></i> About Us</a>
+        <a href="contact.html" target="_blank"><i class="fas fa-envelope"></i> Contact Us</a>
+    </div>
+</nav>
+
+    <section class="hero">
+        <h1>Master Modern Technologies</h1>
+        <p>Learn in-demand tech skills through hands-on projects and expert-led courses</p>
+        <a href="buttonstr.html"> <button class="cta-button"> Start Learning Today </button> </a>
+    </section>
+
+    <section class="tech-categories">
+        <h2 class="section-title">Explore Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript and modern frameworks</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Development</h3>
+                <p>Build native and cross-platform mobile apps</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Computing</h3>
+                <p>Master AWS, Azure, and Google Cloud platforms</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>SQL, NoSQL, and database management systems</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <h2 class="section-title">Popular Courses</h2>
+        <div class="categories-grid">
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Development">
+                <div class="course-info">
+                    <h3>Full Stack Web Development</h3>
+                    <p>Complete guide to modern web development</p>
+                    <div class="course-details">
+                        <span>4.8 ★</span>
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1614332287897-cdc485fa562d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mobile Development">
+                <div class="course-info">
+                    <h3>React Native Mobile Apps</h3>
+                    <p>Build cross-platform mobile applications</p>
+                    <div class="course-details">
+                        <span>4.7 ★</span>
+                        <span>4 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cloud Computing">
+                <div class="course-info">
+                    <h3>AWS Certified Solutions</h3>
+                    <p>Complete cloud computing course</p>
+                    <div class="course-details">
+                        <span>4.9 ★</span>
+                        <span>8 Weeks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About TechLearn</h4>
+                <p>Making technology education accessible to everyone</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">Courses</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 TechLearn. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
